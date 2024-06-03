@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvancedProgramming2024.Domain.Entities.Equipament
+namespace AdvancedProgramming2024.Domain.Entities.Equipments
 {
-    public class Sensor : Equipament
+    public class Sensor : Equipment
     {
         #region Properties
 

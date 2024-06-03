@@ -21,7 +21,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Types
         /// Unidad de medida
         /// </summary>
 
-        public string UnitMeasurement { get; }
+        public string MeasurementUnit { get; }
 
         #endregion
 
@@ -29,10 +29,10 @@ namespace AdvancedProgramming2024.Domain.Entities.Types
         /// Inicializando
         /// </summary>
 
-        public PhysicalMagnitude(string name, string unitMeasurement)
+        public PhysicalMagnitude(string name, string measurementunit)
         {
             Name = name;
-            UnitMeasurement = unitMeasurement;
+            MeasurementUnit = measurementunit;
         }
 
 

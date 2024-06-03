@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvancedProgramming2024.Domain.Entities.Equipament
+namespace AdvancedProgramming2024.Domain.Entities.Equipments
 {
-    public abstract class Equipament
+    public abstract class Equipment
     {
         #region Properties
 
@@ -31,7 +31,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Equipament
        
         #endregion
 
-        public Equipament(string code, string manufacturerName, PhysicalMagnitude physicalMagnitude)   
+        public Equipment(string code, string manufacturerName, PhysicalMagnitude physicalMagnitude)   
         {
             Code = code;
             ManufacturerName = manufacturerName;
