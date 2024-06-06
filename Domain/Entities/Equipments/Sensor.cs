@@ -15,12 +15,12 @@ namespace AdvancedProgramming2024.Domain.Entities.Equipments
         /// Principio de funcionamieto
         /// </summary>
 
-        public string Function { get; }
+        public string Function { get; set; }
 
         /// <summary>
         /// Protocolo de comunicacion
         /// </summary>
-        Protocol Protocol { get; }
+        public Protocol Protocol { get; set; }
 
         #endregion
 

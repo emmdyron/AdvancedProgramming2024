@@ -27,7 +27,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Equipments
         /// Magnitud fisica
         /// </summary>
         /// 
-        PhysicalMagnitude PhysicalMagnitude { get; }
+        public PhysicalMagnitude PhysicalMagnitude { get; set; }
        
         #endregion
 

@@ -15,13 +15,13 @@ namespace AdvancedProgramming2024.Domain.Entities.Types
         /// Nombre de la magnitud fisica
         /// </summary>
 
-        public string Name { get; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Unidad de medida
         /// </summary>
 
-        public string MeasurementUnit { get; }
+        public string MeasurementUnit { get; set; }
 
         #endregion
 
