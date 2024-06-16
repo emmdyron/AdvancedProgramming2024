@@ -1,4 +1,5 @@
-﻿using AdvancedProgramming2024.Domain.Entities.Types;
+﻿using AdvancedProgramming2024.Domain.Common;
+using AdvancedProgramming2024.Domain.Entities.Types;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AdvancedProgramming2024.Domain.Entities.Equipments
 {
-    public abstract class Equipment
+    public abstract class Equipment : Entity
     {
         #region Properties
 
@@ -31,7 +32,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Equipments
        
         #endregion
 
-        public Equipment(string code, string manufacturerName, PhysicalMagnitude physicalMagnitude)   
+        public Equipment(string code, string manufacturerName, PhysicalMagnitude physicalMagnitude, Guid id)  : base(id) 
         {
             Code = code;
             ManufacturerName = manufacturerName;

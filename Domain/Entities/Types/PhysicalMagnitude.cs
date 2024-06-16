@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AdvancedProgramming2024.Domain.Common;
 
 namespace AdvancedProgramming2024.Domain.Entities.Types
 {
-    public class PhysicalMagnitude
+    public class PhysicalMagnitude : ValueObject
     {
 
         #region Properties
@@ -25,9 +26,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Types
 
         #endregion
 
-        /// <summary>
-        /// Inicializando
-        /// </summary>
+        protected PhysicalMagnitude() { }
 
         public PhysicalMagnitude(string name, string measurementunit)
         {
@@ -35,6 +34,11 @@ namespace AdvancedProgramming2024.Domain.Entities.Types
             MeasurementUnit = measurementunit;
         }
 
+        protected override IEnumerable<object> GerEqualityComponents()
+        {
+            yield return Name;
+            yield return MeasurementUnit;
+        }
 
     }
 

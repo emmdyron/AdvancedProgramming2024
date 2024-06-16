@@ -24,7 +24,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Equipments
 
         #endregion
 
-        public Sensor(string code, string manufacturerName, PhysicalMagnitude physicalMagnitude, string function, Protocol protocol) : base(code, manufacturerName,physicalMagnitude) 
+        public Sensor(string code, string manufacturerName, PhysicalMagnitude physicalMagnitude, string function, Protocol protocol, Guid id) : base(code, manufacturerName,physicalMagnitude, id) 
         {
             Function = function;
             Protocol = protocol;

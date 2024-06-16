@@ -24,7 +24,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Equipments
 
         #endregion
 
-        public Actuator(string code, string manufacturerName, PhysicalMagnitude physicalMagnitude, string codeAuto) : base(code, manufacturerName, physicalMagnitude)
+        public Actuator(string code, string manufacturerName, PhysicalMagnitude physicalMagnitude, string codeAuto, Guid id) : base(code, manufacturerName, physicalMagnitude, id)
         {
             IsDigital = false;
             CodeAuto = codeAuto;

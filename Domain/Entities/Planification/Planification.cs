@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AdvancedProgramming2024.Domain.Common;
 
 namespace AdvancedProgramming2024.Domain.Entities.Planification
 {
-    public class Planification
+    public class Planification : Entity
     {
 
         #region Properties
@@ -23,7 +24,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Planification
 
         #endregion
 
-        public Planification(string operatorName)
+        public Planification(string operatorName, Guid id) : base(id)
         {
             OperatorName = operatorName;
         }

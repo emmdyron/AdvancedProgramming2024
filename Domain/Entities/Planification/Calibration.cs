@@ -25,7 +25,7 @@ namespace AdvancedProgramming2024.Domain.Entities.Planification
 
         #endregion
 
-        public Calibration(string certifier, string operatorName) : base(operatorName)
+        public Calibration(string certifier, string operatorName, Guid id) : base(operatorName, id)
         {
             Sensors = new List<Sensor>();
             Certifier = certifier;
